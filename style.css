@@ -1,0 +1,46 @@
+body{
+    background-color: #b2c2bf;
+}
+
+#images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    gap: 130px;
+}
+
+.rockImg, .paperImg, .scissorsImg{
+    height: 200px;
+    width: auto;
+    border: solid #eaece5 10px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.title{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;  
+    font-weight: bold;
+    color: #3b3a30;
+}
+
+.choose{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;  
+    font-weight: bold;
+    color: #3b3a30;
+    cursor: pointer;
+}
+.purple{
+    height: 200px;
+    width: auto;
+    border: solid purple 10px;
+    border-radius: 5%;
+}
