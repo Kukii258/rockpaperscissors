@@ -1,12 +1,32 @@
 body{
     background-color: #b2c2bf;
 }
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    flex-direction: column;
+    gap: 130px;
+    margin-top: 150px;
+    
+}
+.playerChoiceImg, .computerChoiceImg{
+    padding: 100px;
+    border: solid black 2px;
+    margin-left:20px;
+    margin-right: 20px;
+}
+.playerChoice, .computerChoice{
+    margin-left:75px;
+    margin-right: 67px;
+}
 
 #images{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 50px;
     gap: 130px;
 }
 

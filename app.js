@@ -5,67 +5,93 @@ const choose = document.querySelector('.choose');
 
 let p = 0;
 let c = 0;
+let st= 0;
+let pw = 0;
+let cw = 0;
 
 
 // Rock Function
 rock.addEventListener('click',function(e){
-  p = 1;
+    p = 1;
 
-  if(p == 1){
     rock.classList.add('purple');
     paper.classList.remove('purple');
     scissors.classList.remove('purple');
-}
 });
 
 // Paper Function
 paper.addEventListener('click',function(e){
     p = 2;
 
-    if(p == 2){
-        paper.classList.add('purple');
-        rock.classList.remove('purple');
-        scissors.classList.remove('purple');
-    }
+    paper.classList.add('purple');
+    rock.classList.remove('purple');
+    scissors.classList.remove('purple');
+    
   });
 
 // Scissors Function
 scissors.addEventListener('click',function(e){
     p = 3;
 
-    if(p == 3){
-        scissors.classList.add('purple');
-        rock.classList.remove('purple');
-        paper.classList.remove('purple');
-    }
+    scissors.classList.add('purple');
+    rock.classList.remove('purple');
+    paper.classList.remove('purple');
+
   });
   
 
 choose.addEventListener('click',function(e){
     c = computerPlay();
-    console.log(c);
-
-if (p==1 && c==1)
-    alert("Computer choose Rock \n Draw");
-else if (p == 1 && c==2)
-    alert("Computer choose Paper \n Computer win");
-else if (p==1 && c==3)
-    alert("Computer choose Scissors \n You win");
-else if (p == 2 && c==1)
-    alert("Computer choose Rock \n You win");
-else if (p==2 && c==2)
-    alert("Computer choose Paper \n Draw");
-else if (p == 2 && c==3)
-    alert("Computer choose Scissors \n Computer win");
-else if (p==3 && c==1)
-    alert("Computer choose Rock \n Computer win");
-else if (p == 3 && c==2)
-    alert("Computer choose Paper \n You win");
-else if (p==3 && c==3)
-    alert("Computer choose Scissors \n Draw");
+    console.log("Computer choose: ",c);
 
 
-
+//if(pw<6 && cw<6){
+//    if (p==1 && c==1){
+//        console.log("st: ",st,"pw: ",pw,"cw: ",cw);
+//    }
+//    else if (p == 1 && c==2){
+//        cw++;
+//        console.log("st: ",st,"pw: ",pw,"cw: ",cw);
+//    }
+//    else if (p==1 && c==3){
+//        pw++;
+//        console.log("st: ",st,"pw: ",pw,"cw: ",cw);
+//    }
+//    else if (p == 2 && c==1){
+//        pw++;
+//        console.log("st: ",st,"pw: ",pw,"cw: ",cw);
+//    }
+//    else if (p==2 && c==2){
+//        console.log("st: ",st,"pw: ",pw,"cw: ",cw);
+//    }
+//    else if (p == 2 && c==3){
+//        cw++;
+//        console.log("st: ",st,"pw: ",pw,"cw: ",cw);
+//    }
+//    else if (p==3 && c==1){
+//        cw++;
+//        console.log("st: ",st,"pw: ",pw,"cw: ",cw);
+//    }
+//    else if (p == 3 && c==2){
+//        pw++;
+//        console.log("st: ",st,"pw: ",pw,"cw: ",cw);
+//    }
+//    else if (p==3 && c==3){
+//       
+//        console.log("st: ",st,"pw: ",pw,"cw: ",cw);
+//    }
+//}
+//if(pw==5 || cw==5){
+//    if(pw>cw){
+//        alert("You win");
+//        cw=0;
+//        pw=0;
+//    }else{
+//        alert("Computer win")
+//        cw=0;
+//        pw=0;
+//    }
+//}
 });
 
 function computerPlay(){
@@ -73,23 +99,11 @@ function computerPlay(){
 }
 
 
+var modals = document.querySelectorAll('#images');
 
 
-
-
-/// function playerPlay(){
-///     let des = prompt("Enter Rock, Paper or Scissors");
-///     let desision;
-///     if (des == "Rock" || des == "rock")
-///         desision = 1;
-///     else if (des == "Paper" || des == "paper")
-///         desision = 2;
-///     else if (des == "Scissors" || des == "scissors")
-///         desision = 3;
-///     else
-///         alert("Invalid Input");
-///     return desision;
-/// }
-///let a = playerPlay();
-///let b = computerPlay();
-
+modals.forEach(function(trigger) {
+    
+      
+    
+  });
